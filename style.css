@@ -134,6 +134,7 @@ main{
     align-items: center;
     flex-direction: column;
     margin-top: 2rem;
+    padding: 6rem;
 }
 
 .menu__btn-group{
@@ -156,9 +157,10 @@ main{
 }
 
 .btn-menu:hover{
-    color: #000;
+    border-radius: none;
+    background-color: var(--orange);
+    color: var(--light-gray);
     text-shadow: 1px 1px 3px #000;
-    background-color: var(--light-orange);
 }
 
 .btn-food{
@@ -172,7 +174,17 @@ main{
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    margin: 2rem;
+    margin: 4rem;
+}
+
+.title-category{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: var(--orange);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .img_menu{
@@ -181,7 +193,33 @@ main{
     object-fit: cover;
     object-position: top;
     position: relative;
-    max-height: 30rem;
-    width: 40%;
+    max-height: 25rem;
+    width: 25rem;
+    margin-bottom: 2rem;
 }
 
+.menu__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.text-container .price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange);
+    text-shadow: 1px 1px 3px var(--light-orange);
+    margin-bottom: 0.5rem;
+}
+
+.text-container h1{
+    color: var(--orange);
+    margin-bottom: 0.5rem;
+}
+
+.text-container p{
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
