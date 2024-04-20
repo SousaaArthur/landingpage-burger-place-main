@@ -51,19 +51,19 @@
     <section class="menu" id="menu">
       <!--Navbar menu-->
       <div class="menu__btn-group">
-        <p class="btn-food btn-menu">
+        <p class="btn-menu btnActive" id="btnFood">
           Alimentos
         </p>
-        <p class="btn-drinks btn-menu">
+        <p class="btn-menu" id="btnDrinks">
           Bebidas
         </p>
-        <p class="btn-dessert btn-menu">
+        <p class="btn-menu" id="btnDessert">
           Sobremesa
         </p>
       </div>
       <!--Food menu-->
       <div class="food__menu">
-        <div class="title-category">
+        <div class="title-category__menu">
           <h1>
             Hambúrgueres
           </h1>
@@ -128,7 +128,7 @@
             </h1>
           </div>
         </div>
-        <div class="title-category">
+        <div class="title-category__menu">
           <h1>
             Porções
           </h1>
@@ -175,25 +175,169 @@
         </div>
       </div>
       <!--Drinks menu-->
-      <div class="drinks__menu">
-        <div class="menu__item1"></div>
-        <div class="menu__item2"></div>
-        <div class="menu__item3"></div>
-        <div class="menu__item4"></div>
-        <div class="menu__item5"></div>
+      <div class="drinks__menu hidden">
+        <div class="title-category__menu">
+          <h1>
+            Bebidas Alcoólicas
+          </h1>
+        </div>
+        <div class="menu__item">
+          <img src="./imgs/menu/drinks/cerveja.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Cervejas
+            </h1>
+            <p>
+              Skol, Brahma, Cold Brew Lager, Heineken, Amstel, Stella Artois.
+            </p>
+            <h1>
+              Whiskys
+            </h1>
+            <p>
+              Scotch, Bourbon, Rye Whiskey, Irish, Canadian, Tennessee, Single Malt.
+            </p>
+            <h1 class="price">
+              Por 19,90R$
+            </h1>
+          </div>
+        </div> 
+        <div class="menu__item">
+          <img src="./imgs/menu/drinks/vinho.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Vinhos Suava
+            </h1>
+            <p>
+              Barefoot, Yellow Tail, Sutter Home, Riunite, Beringer, Blossom Hill, Jacob's Creek, Gallo Family Vineyards.
+            </p>
+            <h1>
+              Vinhos Seco
+            </h1>
+            <p>
+              Château Lafite Rothschild, Penfolds, Château Margaux, Catena Zapata, Antinori, Torres, Caymus Vineyards.
+            </p>
+            <h1 class="price">
+              Por 29,90R$
+            </h1>
+          </div>
+        </div> 
+        <div class="title-category__menu">
+          <h1>
+            Bebidas sem Álcool
+          </h1>
+        </div>
+        <div class="menu__item">
+          <img src="./imgs/menu/drinks/sucos.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Sucos Naturais
+            </h1>
+            <p>
+              Laranja, Limão, Abacaxi, Manga, Morango, Melancia, Maracujá, Uva.
+            </p>
+            <h1>
+              Sucos Processados
+            </h1>
+            <p>
+              Laranja, Limão, Abacaxi, Manga, Morango, Melancia, Maracujá.
+            </p>
+            <h1 class="price">
+              Por 10,00R$
+            </h1>
+          </div>
+        </div> 
+        <div class="menu__item">
+          <img src="./imgs/menu/drinks/refrigerante.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Refrigerantes
+            </h1>
+            <p>
+              Coca-Cola, Pepsi, Sprite, Fanta, Guarana Antarctica, Scheweppes, Kuat, Schins.
+            </p>
+            <h1>
+              Refrigerantes sem Açúcar
+            </h1>
+            <p>
+              Coca-Cola Light, Pepsi Light, Sprite Zero, Fanta Zero, Guaraná Zero, Kuat Zero, Schweppes Diet, 7Up Free.
+            </p>
+            <h1 class="price">
+              Por 15,00R$
+            </h1>
+          </div>
+        </div> 
       </div>
       <!--Desset menu-->
-      <div class="Desset__menu">
-        <div class="menu__item1"></div>
-        <div class="menu__item2"></div>
-        <div class="menu__item3"></div>
-        <div class="menu__item4"></div>
-        <div class="menu__item5"></div>
+      <div class="dessert__menu hidden">
+        <div class="title-category__menu">
+          <h1>
+            Sobremesa
+          </h1>
+        </div>
+        <div class="menu__item">
+          <img src="./imgs/menu/desset/sorvete.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Sorvete
+            </h1>
+            <p>
+              Baunilha, Chocolate, Morango, Menta com pedaços de chocolate, Creme de amendoim, Flocos, Creme brûlée, Frutas tropicais.
+            </p>
+            <h1 class="price">
+              Por 10,00R$
+            </h1>
+          </div>
+        </div>
+        <div class="menu__item">
+          <img src="./imgs/menu/desset/mousse.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Mousse
+            </h1>
+            <p>
+              Mousse de Chocolate, Mousse de Morango, Mousse de Limão, Mousse de Maracujá, Mousse de Frutas Vermelhas, Mousse de Manga, Mousse de Coco.
+            </p>
+            <h1 class="price">
+              Por 19,90R$
+            </h1>
+          </div>
+        </div>
+        <div class="menu__item">
+          <img src="./imgs/menu/desset/bolo.png" alt="" class="img_menu">
+          <div class="text-container">
+            <h1>
+              Bolo
+            </h1>
+            <p>
+              Bolo de Chocolate, Bolo de Cenoura, Bolo de Limão, Bolo Red Velvet, Bolo de Laranja, Bolo de Coco, Bolo de Banana, Bolo de Morango.
+            </p>
+            <h1 class="price">
+              Por 15,00R$
+            </h1>
+          </div>
+        </div>
       </div>
     </section>
     <section class="assessment">
-      <div>
-        
+      <div class="title-category__assessment"> 
+        <h1>Avaliações</h1>
+      </div>
+      <div class="card-group__assessment">
+        <div class="card__assessment">
+          
+        </div>
+        <div class="card__assessment">
+          
+        </div>
+        <div class="card__assessment">
+          
+        </div>
+        <div class="card__assessment">
+          
+        </div>
+        <div class="card__assessment">
+          
+        </div>
       </div>
     </section>
     <section class="local">
