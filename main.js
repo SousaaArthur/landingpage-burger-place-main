@@ -2,7 +2,7 @@
 window.addEventListener("scroll", function(){
   let nav = document.querySelector("#navbar");
   nav.classList.toggle('transparent-nav', window.scrollY > 0)
-  nav.classList.toggle('orange-nav', window.scrollY > 500)
+  nav.classList.toggle('black-nav', window.scrollY > 2455)
 })
 
 const btnFood = document.getElementById("btnFood");
